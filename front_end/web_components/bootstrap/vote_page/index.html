@@ -4,7 +4,7 @@
 		<meta charset=utf-8>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-		<!-- 跟你说我受不了了啊kora -->
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
 		<meta name="description" content="">
 		<meta name="author" content="">
 		<!-- <link rel="icon" href="../../favicon.ico"> -->
@@ -18,6 +18,8 @@
 		<!-- <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 		-->
 
+		<!-- <link rel="stylesheet" href="dropkick.css"> -->
+
 		<!-- Custom styles for this template -->
 		<link href="index.css" rel="stylesheet">
 
@@ -30,18 +32,28 @@
 
   	<body>
   		<div class="titleRange">
+			<div class="leftBlank"></div>
   			<div id="titleName">
-  				<h1>XXX 表决</h1>
+  				<h1>XXX &nbsp; 表决</h1>
   			</div>
   			<img src="Anastasia.JPG" alt="im">
-  		</div>
+  		</div><!-- /.titleRange -->
   		
     	<div class="container">
-	
-	      	<div class="starter-template">
-	        	<h1>Bootstrap starter template</h1>
-	        	<p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-	      	</div>
+			<div class="votingResult">
+				<div class="candidate">
+					<!-- Single button -->
+					<!-- <div class="dk-wrap">
+						
+					</div> -->
+					<select name="" id="" class="cName">
+						<option value="o1">1</option>
+						<option value="o2">2</option>
+					</select>
+				<div class="barChart"></div>
+				<div class="buttonRange"></div>
+			</div><!-- /.votingResult -->
+			
     	</div><!-- /.container -->
 
 
@@ -50,7 +62,11 @@
     	<!-- Placed at the end of the document so the pages load faster -->
     	<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
     	<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+		<!-- <script src="jquery.dropkick-min.js"></script> -->
+		
+		<script src="index.js"></script>
     	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     	<!-- <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
   	</body>
