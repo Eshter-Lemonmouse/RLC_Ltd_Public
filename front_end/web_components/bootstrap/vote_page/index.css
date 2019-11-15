@@ -74,7 +74,6 @@ body {
 	height: 35rem;
 	margin: 0 auto;
 	text-align: center;
-	
 }
 
 .votingResult > .buttonRange {
@@ -88,22 +87,65 @@ body {
 	width: 20%;
 	display: inline-block;
 	margin-top: 1rem;
-	background-color: rgba(255, 255, 255, 0.1);
-	text-align: center;
-	text-align-last: center;
+	/* background-color: rgba(255, 255, 255, 0.1); */
+	/* text-align: center; */
+	/* text-align-last: center; */
 	/* padding-top: 0.5rem, 0; */
 	
 }
 
+.cName > .btn {
+	display: block;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.1);
+	text-align: center;
+	border: 0.1rem solid;
+	border-color: rgba(255, 255, 255, 0.2);
+}
 
-.cName option {
+/* .cName option {
 	text-align: center;
 	text-align-last: center;
+} */
+
+.cName > ul {
+	list-style-type: none;
+	padding-left: 0;
+	/* margin-top: 1rem; */
 }
 
-.translucentButton, .translucentButton:hover, .translucentButton:active {
-	background-color: rgba(255, 255, 255, 0.1);
+.cName > ul > li {
+	/* padding-left: 1rem; */
+	/* padding-top: 1rem; */
+	/* line-height: 200%; */
+	border-bottom: solid rgba(0, 0, 0, 0.2);
+	display: block;
 }
+
+.cName > .lst {
+	display: none;
+	position: absolute;
+	height: 10.5rem;
+	width: 13.3%;
+	background-color: white;
+	overflow: hidden;
+	border-radius: 0 0 2% 2%;
+}
+
+.cName:hover, .cName:focus, .cName:active{
+	/* border-color: rgba(11, 76, 150, 0.4); */
+	box-shadow: 0 0 0.2rem 0.1rem #aaa;
+}
+
+/* .cName:hover > .lst {
+	display: block;
+} */
+
+
+/* .translucentButton, .translucentButton:hover, .translucentButton:active {
+	background-color: rgba(255, 255, 255, 0.1);
+} */
 
 /* .translucentButton:hover {
 	background-color: rgba(255, 255, 255, 0.1);
