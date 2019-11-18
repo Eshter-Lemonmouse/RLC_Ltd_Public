@@ -40,24 +40,23 @@
   		</div><!-- /.titleRange -->
   		
     	<div class="container">
+
 			<div class="votingResult">
+
 				<div class="candidate">
 					<!-- 选择下拉菜单 -->
 					<div class="cName">
 						<div class="btn" id="currentName">who</div>
 						<ul class="lst">
-							<li id='l0' href="#">Ann</li>
-							<li href="#">Bob</li>
-							<li href="#">Cindy</li>
-							<li href="#">Daisy</li>
-							<!-- <li href="#"><p id="l1">Ann</p></li>
-							<li href="#"><p id="l2">Bob</p></li>
-							<li href="#"><p id="l3">Cindy</p></li>
-							<li href="#"><p id="l4">Daisy</p></li> -->
+							<li id='i0' class='item' href="#">Ann</li>
+							<li id='i1' class='item' href="#">Bob</li>
+							<li id='i2' class='item' href="#">Cindy</li>
+							<li id='i3' class='item' href="#">Daisy</li>
 						</ul>
-					</div><!-- /.candidate -->
-				<div class="barChart"></div>
-				<div class="buttonRange"></div>
+					</div>
+				</div><!-- /.candidate -->
+				<div class="barChart" id="barChart"></div><!-- /.barChart -->
+				<div class="buttonRange"></div><!-- /.buttonRange -->
 			</div><!-- /.votingResult -->	
     	</div><!-- /.container -->
 
@@ -70,6 +69,8 @@
 		<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 		<!-- <script src="jquery.dropkick-min.js"></script> -->
+
+		<script src="https://cdn.bootcss.com/echarts/4.4.0-rc.1/echarts.min.js"></script>
 		
 		<script src="index.js"></script>
     	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
