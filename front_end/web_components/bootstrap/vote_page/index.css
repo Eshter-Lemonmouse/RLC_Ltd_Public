@@ -117,8 +117,8 @@ body {
 
 .cName > ul > li {
 	/* padding-left: 1rem; */
-	/* padding-top: 1rem; */
-	/* line-height: 200%; */
+	padding-top: 0.5rem;
+	line-height: 150%;
 	border-bottom: solid rgba(0, 0, 0, 0.2);
 	display: block;
 }
@@ -131,6 +131,7 @@ body {
 	background-color: white;
 	overflow: hidden;
 	border-radius: 0 0 2% 2%;
+	z-index: 999;
 }
 
 .cName:hover, .cName:focus, .cName:active{
