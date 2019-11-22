@@ -79,6 +79,8 @@ body {
 .votingResult > .buttonRange {
 	width: 100%;
 	height: 5rem;
+	display: block;
+	text-align: center;
 	/* margin-top: 1rem; */
 }
 
@@ -94,8 +96,9 @@ body {
 	
 }
 
-.cName > .btn {
+.cName > .lstBtn {
 	display: block;
+	padding-top: 0.5rem;
 	height: 100%;
 	width: 100%;
 	background-color: rgba(255, 255, 255, 0.1);

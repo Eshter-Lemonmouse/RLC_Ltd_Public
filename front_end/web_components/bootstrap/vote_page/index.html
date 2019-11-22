@@ -14,20 +14,8 @@
 		<!-- Bootstrap core CSS -->
 		<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 
-		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-		<!-- <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-		-->
-
-		<!-- <link rel="stylesheet" href="dropkick.css"> -->
-
 		<!-- Custom styles for this template -->
 		<link href="index.css" rel="stylesheet">
-
-		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-		<!--[if lt IE 9]>
-	  	<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-	  	<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-		<![endif]-->
 	</head>
 
   	<body>
@@ -46,7 +34,7 @@
 				<div class="candidate">
 					<!-- 选择下拉菜单 -->
 					<div class="cName">
-						<div class="btn" id="currentName">who</div>
+						<div class="lstBtn" id="currentName"></div>
 						<ul class="lst">
 							<li id='i0' class='item' href="#">Ann</li>
 							<li id='i1' class='item' href="#">Bob</li>
@@ -56,7 +44,9 @@
 					</div>
 				</div><!-- /.candidate -->
 				<div class="barChart" id="barChart"></div><!-- /.barChart -->
-				<div class="buttonRange"></div><!-- /.buttonRange -->
+				<div class="buttonRange">
+					<button class="btn btn-warning">停止</button>
+				</div><!-- /.buttonRange -->
 			</div><!-- /.votingResult -->	
     	</div><!-- /.container -->
 
@@ -72,8 +62,10 @@
 
 		<script src="https://cdn.bootcss.com/echarts/4.4.0-rc.1/echarts.min.js"></script>
 		
+		
 		<script src="index.js"></script>
-    	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+		<!-- <script src="vote_result.json?cb=fun"></script> -->
+		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     	<!-- <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
   	</body>
 </html>
