@@ -19,37 +19,35 @@
 	</head>
 
   	<body>
+		<!-- 标题 -->
   		<div class="titleRange">
 			<div class="leftBlank"></div>
   			<div id="titleName">
   				<h1>XXX &nbsp; 表决</h1>
   			</div>
-  			<img src="Anastasia.JPG" alt="im">
+  			<img src="Anastasia.JPG" alt="im">	<!-- 小图标。。。 -->
   		</div><!-- /.titleRange -->
   		
     	<div class="container">
-
+			<!-- 票数显示 -->
 			<div class="votingResult">
-
 				<div class="candidate">
 					<!-- 选择下拉菜单 -->
 					<div class="cName">
 						<div class="lstBtn" id="currentName"></div>
-						<ul class="lst">
-							<li id='i0' class='item' href="#">Ann</li>
-							<li id='i1' class='item' href="#">Bob</li>
-							<li id='i2' class='item' href="#">Cindy</li>
-							<li id='i3' class='item' href="#">Daisy</li>
-						</ul>
+						<ul class="lst" id="lst"></ul>
 					</div>
 				</div><!-- /.candidate -->
+				<!-- 图表 -->
 				<div class="barChart" id="barChart"></div><!-- /.barChart -->
+				<!-- 功能按钮 -->
 				<div class="buttonRange">
-					<button class="btn btn-warning">停止</button>
+					<button class="btn btn-warning" id="pause">停止</button>
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					<button class="btn btn-primary" id="ctn">继续</button>
 				</div><!-- /.buttonRange -->
 			</div><!-- /.votingResult -->	
     	</div><!-- /.container -->
-
 
     	<!-- Bootstrap core JavaScript
     	================================================== -->
@@ -58,14 +56,9 @@
     	<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
 		<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-		<!-- <script src="jquery.dropkick-min.js"></script> -->
-
 		<script src="https://cdn.bootcss.com/echarts/4.4.0-rc.1/echarts.min.js"></script>
 		
-		
+		<!-- user-defined js -->
 		<script src="index.js"></script>
-		<!-- <script src="vote_result.json?cb=fun"></script> -->
-		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    	<!-- <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
   	</body>
 </html>
