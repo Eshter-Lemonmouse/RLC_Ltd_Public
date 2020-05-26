@@ -8,19 +8,51 @@
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.css">
+	<link rel="stylesheet" href="index.css">
 
 	<title>Hello, world!</title>
 </head>
 
 <body>
-	<div id="app">
-		{{message}}
-	</div>
-	
-	<div id="app-2">
-		<span v-bind:title="message">
-			The WORLD!
-		</span>
+	<div class="container">
+		<div id="root">	<!-- 挂载点：Vue实例只会处理挂载点下的内容 -->
+			<!-- 挂载点内部的内容被称为模板内容 -->
+			<div :title="title">Hello World</div>
+			<input type="text" v-model="content"><!-- v-model指令实现了页面和数据的双向绑定 -->
+			<div>{{content}}</div><!-- 单项绑定：数据决定页面的内容，但页面无法决定数据的内容 -->
+		</div>
+
+		<div id="root1">
+			First Name: <input type="text" v-model="firstName">
+			Last Name: <input type="text" v-model="lastName">
+			<p>{{fullName}}</p>
+		</div>
+		
+		<div id="root2">
+			<div v-show="show">hello world</div>
+			<button class="btn btn-primary" @click="handleClick">toggle</button>
+			<ul >
+				<li v-for="(item, index) in list">{{item}}</li>
+			</ul>
+		</div>
+		
+		<div id="root3"><!-- todo list功能学习 -->
+			<input type="text" v-model="inputValue">
+			<button @click="handleClick">提交</button>
+			<ul>
+				<todo-item
+					v-for="(item, index) in list"
+					:key="index"
+					:content="item"
+					:index="index"
+					@delete="handleDelete"
+				>
+				</todo-item>
+				<!-- <li v-for="(item, index) in list" :key="index">
+					{{item}}
+				</li> -->
+			</ul>
+		</div>
 	</div>
 
 	<!-- Optional JavaScript -->
@@ -28,8 +60,6 @@
 	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.js"></script>
-
-	
 
 	<!-- Vue相关 -->
 	<!-- 开发环境版本，包含了有帮助的命令行警告 -->

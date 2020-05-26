@@ -1,0 +1,59 @@
+body {
+	overflow: auto;
+	min-height: 100%;
+	height: auto;
+}
+
+.content, .content-padded {
+	position: relative;
+}
+
+.img-responsive {
+	position: relative;
+	display: block;
+	width: 100%;
+}
+
+.line {
+	min-width: 30%;
+	min-height: 5rem;
+	border-color: black;
+	border-width: 20px;
+	border: solid;
+}
+
+.cvs {
+	width: 30%;
+	height: 3rem; 
+	border: 1px solid #c3c3c3;
+}
+
+#container {
+	position: relative;
+	min-height: 100%;
+	height: auto !important;
+}
+
+#submit-btn-range {
+	display: block;
+	text-align: center;
+}
+
+/* #third {
+	text-align: center;
+	display: inline-block !important;
+} */
+
+#ft {
+	color: #999;
+}
+
+@media screen and (min-width:400px) {
+	.img-responsive {
+		width: 33%;
+		margin: 0 auto;
+	}
+	.cvs {
+		width: 100%;
+	}
+}
